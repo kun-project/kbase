@@ -1,0 +1,6 @@
+{
+    // 为xmake文件启用着色
+    "files.associations": {
+        "**/xmake/*.lua": "xmake"
+    }
+}
