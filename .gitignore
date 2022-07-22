@@ -36,3 +36,10 @@ compile_commands.json
 
 # Xmake
 .xmake/*
+
+# Vscode
+.cache/
+build/
+
+# Clion
+cmake-build-*/
