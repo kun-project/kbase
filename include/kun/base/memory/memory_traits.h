@@ -1,6 +1,6 @@
 #pragma once
-#include "kun/config.h"
-#include "kun/traits.h"
+#include "kun/base/config.h"
+#include "kun/base/traits.h"
 
 // traits def
 namespace kun::memory
