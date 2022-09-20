@@ -26,7 +26,7 @@ namespace kun::memory
 {
 KUN_INLINE void free(void* p)
 {
-    #if KUN_PLATFORM == KUN_PLATFORM_WINDOWS
+    #if defined(KUN_PLATFORM_WINDOWS)
     ::_aligned_free(p);
     #else
         #error default impl only support on windows, please impl it manually
@@ -34,7 +34,7 @@ KUN_INLINE void free(void* p)
 }
 KUN_INLINE void* malloc(Size n, Size alignment)
 {
-    #if KUN_PLATFORM == KUN_PLATFORM_WINDOWS
+    #if defined(KUN_PLATFORM_WINDOWS)
     return ::_aligned_malloc(n, alignment);
     #else
         #error default impl only support on windows, please impl it manually
@@ -42,7 +42,7 @@ KUN_INLINE void* malloc(Size n, Size alignment)
 }
 KUN_INLINE void* realloc(void* p, Size n, Size alignment)
 {
-    #if KUN_PLATFORM == KUN_PLATFORM_WINDOWS
+    #if defined(KUN_PLATFORM_WINDOWS)
     return ::_aligned_realloc(p, n, alignment);
     #else
         #error default impl only support on windows, please impl it manually
