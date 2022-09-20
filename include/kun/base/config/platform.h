@@ -1,5 +1,4 @@
 #pragma once
-
 //-------------------------------------------------------------------------------
 // -> platform
 //      KUN_PLATFORM_LINUX
@@ -27,7 +26,6 @@
 //
 //-------------------------------------------------------------------------------
 
-//platform def
 #if defined(KUN_PLATFORM_LINUX) || (defined(__linux) || defined(__linux__))
     // platform
     #undef KUN_PLATFORM_LINUX
