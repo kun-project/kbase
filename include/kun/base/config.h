@@ -1,21 +1,32 @@
 #pragma once
+//-------------------------------------------------------------------------------
+// -> util marco
+//      KUN_EXPORT
+//      KUN_IMPORT
+//      KUN_INLINE
+//      KUN_DBG_LEVEL
+//
+// -> type marco
+//      KUN_CUSTOM_REAL
+//
+//-------------------------------------------------------------------------------
 #include "config/platform.h"
 #include "config/compiler.h"
 
 // dllexport
 #if defined(KUN_COMPILER_GCC) || defined(KUN_COMPILER_CLANG)
-    #define KUN_DLLEXPORT __attribute__((dllexport))
+    #define KUN_EXPORT __attribute__((dllexport))
 #elif defined(KUN_COMPILER_MSVC)
-    #define KUN_DLLEXPORT __declspec(dllexport)
+    #define KUN_EXPORT __declspec(dllexport)
 #else
     #error unsupport dll export
 #endif
 
 // dllimport
 #if defined(KUN_COMPILER_GCC) || defined(KUN_COMPILER_CLANG)
-    #define KUN_DLLIMPORT __attribute__((dllimport))
+    #define KUN_IMPORT __attribute__((dllimport))
 #elif defined(KUN_COMPILER_MSVC)
-    #define KUN_DLLIMPORT __declspec(dllimport)
+    #define KUN_IMPORT __declspec(dllimport)
 #else
     #error unsupport dll import
 #endif
@@ -42,3 +53,7 @@
 #ifndef KUN_DBG_LEVEL
     #define KUN_DBG_LEVEL 0
 #endif
+
+// custom real
+// #define KUN_CUSTOM_REAL
+// using real = float;
