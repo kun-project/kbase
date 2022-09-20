@@ -97,7 +97,7 @@ __attribute__((always_inline)) __inline__ static void trap_instruction(void)
     __asm__ volatile(".inst 0xd4200000");
 }
     #elif defined(__powerpc__)
-            /* PPC 32 or 64-bit, big or little endian */
+        /* PPC 32 or 64-bit, big or little endian */
         #define DEBUG_BREAK_IMPL DEBUG_BREAK_USE_TRAP_INSTRUCTION
 __attribute__((always_inline)) __inline__ static void trap_instruction(void)
 {
@@ -113,7 +113,7 @@ __attribute__((always_inline)) __inline__ static void trap_instruction(void)
     * or manually jump over the instruction. */
 }
     #elif defined(__riscv)
-            /* RISC-V 32 or 64-bit, whether the "C" extension
+        /* RISC-V 32 or 64-bit, whether the "C" extension
     * for compressed, 16-bit instructions are supported or not */
         #define DEBUG_BREAK_IMPL DEBUG_BREAK_USE_TRAP_INSTRUCTION
 __attribute__((always_inline)) __inline__ static void trap_instruction(void)

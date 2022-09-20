@@ -1,5 +1,6 @@
 #pragma once
-// !!!! never include any header here !!!!
+#include "config/platform.h"
+#include "config/compiler.h"
 
 // platform def
 #define KUN_PLATFORM_WINDOWS 0

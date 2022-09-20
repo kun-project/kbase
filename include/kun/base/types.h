@@ -31,7 +31,9 @@ KUN_INT_CONSTANTS(32)
 KUN_INT_CONSTANTS(64)
 
 // float types
+#ifndef KUN_CUSTOM_REAL
 using real = float;
+#endif
 
 // float constants
 inline constexpr real REAL_MIN = std::numeric_limits<real>::min();
