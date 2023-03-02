@@ -16,16 +16,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="193b350b-3436-4cbe-a13d-15d55b490dc0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/customTargets.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scopes/xmake_file.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tools/External Tools.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_traits.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_traits.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmake.lua" beforeDir="false" afterPath="$PROJECT_DIR$/xmake.lua" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +57,9 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -100,7 +95,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "watcher.settings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -123,6 +118,9 @@
       <workItem from="1677731335529" duration="66000" />
       <workItem from="1677731407343" duration="1591000" />
       <workItem from="1677733018953" duration="989000" />
+      <workItem from="1677748724958" duration="412000" />
+      <workItem from="1677749149108" duration="1162000" />
+      <workItem from="1677750339847" duration="37000" />
     </task>
     <servers />
   </component>

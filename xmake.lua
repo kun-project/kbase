@@ -2,8 +2,9 @@ add_requires("gtest")
 add_rules("mode.profile", "mode.releasedbg", "mode.release")
 
 set_languages("c17", "cxx17")
+set_warnings("all", "error")
 
-if is_plat("windows") then 
+if is_plat("windows") then
     add_cxxflags("/Zc:__cplusplus")
 end
 
