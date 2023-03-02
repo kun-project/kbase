@@ -14,7 +14,7 @@
 #include "config/compiler.h"
 
 // dllexport
-#if defined(KUN_COMPILER_GCC) || defined(KUN_COMPILER_CLANG)
+#if defined(KUN_COMPILER_GCC) || defined(KUN_COMPILER_CLANG) || defined(KUN_COMPILER_CLANG_CL)
     #define KUN_EXPORT __attribute__((dllexport))
 #elif defined(KUN_COMPILER_MSVC)
     #define KUN_EXPORT __declspec(dllexport)
@@ -23,7 +23,7 @@
 #endif
 
 // dllimport
-#if defined(KUN_COMPILER_GCC) || defined(KUN_COMPILER_CLANG)
+#if defined(KUN_COMPILER_GCC) || defined(KUN_COMPILER_CLANG) || defined(KUN_COMPILER_CLANG_CL)
     #define KUN_IMPORT __attribute__((dllimport))
 #elif defined(KUN_COMPILER_MSVC)
     #define KUN_IMPORT __declspec(dllimport)
