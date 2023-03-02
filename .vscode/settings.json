@@ -1,6 +1,16 @@
 {
-    // 为xmake文件启用着色
-    "files.associations": {
-        "**/xmake/*.lua": "xmake"
-    }
+    // xmake：项目配置
+    "xmake.compileCommandsDirectory": "build",
+    // clangd：clangd 设定
+    "clangd.arguments": [
+        "--compile-commands-dir=build",
+    ],
+    // clangd：CPP 插件设定
+    "C_Cpp.codeAnalysis.runAutomatically": false,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.formatting": "disabled",
+    "C_Cpp.autoAddFileAssociations": false,
+    "C_Cpp.autocompleteAddParentheses": false,
+    "C_Cpp.autocomplete": "disabled",
+    "C_Cpp.errorSquiggles": "disabled",
 }

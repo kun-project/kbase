@@ -38,8 +38,11 @@ compile_commands.json
 .xmake/*
 
 # Vscode
-.cache/
+.vscode/compile_commands.json
 build/
+
+# clangd
+.cache
 
 # Clion
 cmake-build-*/
