@@ -24,9 +24,9 @@
     #define KUN_COMPILER_GCC 1
 #elif defined(_MSC_VER)
     #if defined(__clang__)
-        #define KUN_COMPILER_CLANG_CL
+        #define KUN_COMPILER_CLANG_CL 1
     #else
-        #define KUN_COMPILER_MSVC
+        #define KUN_COMPILER_MSVC 1
     #endif
 #endif
 
@@ -83,3 +83,5 @@
     #error unknown cpp version
 #endif
 
+// fall back
+#include "compiler_fallback.inc"

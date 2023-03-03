@@ -14,18 +14,18 @@
 #include "config/compiler.h"
 
 // dllexport
-#if defined(KUN_COMPILER_GCC) || defined(KUN_COMPILER_CLANG) || defined(KUN_COMPILER_CLANG_CL)
+#if KUN_COMPILER_GCC || KUN_COMPILER_CLANG || KUN_COMPILER_CLANG_CL
     #define KUN_EXPORT __attribute__((dllexport))
-#elif defined(KUN_COMPILER_MSVC)
+#elif KUN_COMPILER_MSVC
     #define KUN_EXPORT __declspec(dllexport)
 #else
     #error unsupport dll export
 #endif
 
 // dllimport
-#if defined(KUN_COMPILER_GCC) || defined(KUN_COMPILER_CLANG) || defined(KUN_COMPILER_CLANG_CL)
+#if KUN_COMPILER_GCC || KUN_COMPILER_CLANG || KUN_COMPILER_CLANG_CL
     #define KUN_IMPORT __attribute__((dllimport))
-#elif defined(KUN_COMPILER_MSVC)
+#elif KUN_COMPILER_MSVC
     #define KUN_IMPORT __declspec(dllimport)
 #else
     #error unsupport dll import
@@ -33,10 +33,10 @@
 
 // inline
 #ifndef KUN_INLINE
-    #if defined(KUN_COMPILER_GCC) || defined(KUN_COMPILER_CLANG)
-        #define KUN_INLINE __attribute__((always_inline)) inline
-    #elif defined(KUN_COMPILER_MSVC)
-        #define KUN_INLINE __forceinline
+    #if KUN_COMPILER_GCC || KUN_COMPILER_CLANG || KUN_COMPILER_CLANG_CL
+        #define KUN_INLINE inline
+    #elif KUN_COMPILER_MSVC
+        #define KUN_INLINE inline
     #else
         #define KUN_INLINE inline
     #endif

@@ -1,4 +1,8 @@
 {
+    // cpp: 头文件识别
+    "files.associations": {
+        "*.inc": "cpp"
+    },
     // xmake：项目配置
     "xmake.compileCommandsDirectory": "build",
     // clangd：clangd 设定
