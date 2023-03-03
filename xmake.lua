@@ -6,6 +6,7 @@ set_warnings("all", "error")
 
 if is_plat("windows") then
     add_cxxflags("/Zc:__cplusplus")
+    add_cxxflags("/utf-8")
 end
 
 target("kbase")

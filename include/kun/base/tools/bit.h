@@ -5,23 +5,21 @@
 namespace kun
 {
 // countLZero & countRZero
-// L: left, height bit
-// R: right, low bit
+// 得到 bit 中左（高位起）和右（低位起）的 0 个数
 
 // countLOne & countROne
-// L: left, height bit
-// R: right, low bit
+// 得到 bit 中左（高位起）和右（低位起）的 1 个数
 
 // bitWidth
-// num bits for storage this num
+// 得到存储这个数所需要的位数
 
 // bitFloor & bitCeil
-// to 2^n by floor/ceil
+// 相当于得到最近的一个小于/大于该数的二次幂（2^n）
 
 // bitFloorLog2 & bitCeilLog2
-// get n of 2^n by floor/ceil
+// 相当于得到最近的一个小于/大于该数的二次幂（2^n）的幂（n）
 
 // popCount
-// num of 1 in bit
+// 得到 bit 中 1 的个数
 
 }// namespace kun
