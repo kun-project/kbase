@@ -20,5 +20,4 @@ TEST(TestBase, test_traits)
     }
 
     // test traits
-
 }
