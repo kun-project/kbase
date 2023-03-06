@@ -1,4 +1,5 @@
 #pragma once
+#include "kun/base/tools/assert.h"
 
 #ifndef KUN_IMPL_ASSERT_FUNCS
 
