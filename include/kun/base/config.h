@@ -36,7 +36,7 @@
     #else
         #error unsupport dll import
     #endif
-#endif KUN_IMPORT
+#endif
 
 // inline
 #ifndef KUN_INLINE
