@@ -1,7 +1,5 @@
 #include <gtest/gtest.h>
-#include "kun/base/config.h"
-#include "kun/base/types.h"
-#include "kun/base/traits.h"
+#include "kun/base/minimal.h"
 
 TEST(TestBase, test_traits)
 {
