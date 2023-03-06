@@ -21,3 +21,7 @@
 // tools
 #include "kun/base/tools/bit.h"
 #include "kun/base/tools/integer_tools.h"
+
+// default impl
+#include "kun/base/memory/memory_basic_default.h"
+#include "kun/base/tools/assert_default.h"
